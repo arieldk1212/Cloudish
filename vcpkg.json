@@ -1,0 +1,9 @@
+{
+  "name": "cloudish",
+  "version": "0.1.0",
+  "homepage": "https://github.com/arieldk1212/cloudish",
+  "dependencies": [
+    "gtest",
+    "imgui"
+  ]
+}
