@@ -23,3 +23,5 @@ GTest::gmock GTest::gmock_main
 add_subdirectory(src)
 enable_testing()
 add_subdirectory(tests)
+
+target_link_libraries(src PRIVATE ${PROJ_LIBS})
