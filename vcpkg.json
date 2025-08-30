@@ -2,8 +2,18 @@
   "name": "cloudish",
   "version": "0.1.0",
   "homepage": "https://github.com/arieldk1212/cloudish",
+  "builtin-baseline": "b6649256091aa433d6d7a912eb5f2c7725a0c040",
   "dependencies": [
+    "glfw3",
     "gtest",
-    "imgui"
+    {
+      "name": "imgui",
+      "features": [
+        "glfw-binding",
+        "opengl3-binding"
+      ]
+    },
+    "opengl",
+    "glad"
   ]
 }

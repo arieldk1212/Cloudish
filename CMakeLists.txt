@@ -11,10 +11,14 @@ set(CMAKE_PREFIX_PATH "vcpkg_installed/arm64-osx/share")
 
 include_directories(inc)
 
+find_package(OpenGL REQUIRED)
 find_package(imgui CONFIG REQUIRED)
 find_package(GTest CONFIG REQUIRED)
+find_package(glfw3 CONFIG REQUIRED)
 
 list(APPEND PROJ_LIBS
+glfw
+OpenGL::GL
 imgui::imgui
 GTest::gtest GTest::gtest_main
 GTest::gmock GTest::gmock_main
